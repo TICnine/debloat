@@ -43,5 +43,5 @@
 :RunScript
 
     SET ThisScriptsDirectory=C:\Temp\Cleanup\
-    SET PowerShellScriptPath=%ThisScriptsDirectory%SYSTEM-Debloat-MAIN.ps1
+    SET PowerShellScriptPath=%ThisScriptsDirectory%cleanupSYS.ps1
     PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%PowerShellScriptPath%'";

