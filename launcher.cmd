@@ -31,11 +31,11 @@
     
     cd "C:\Temp\Cleanup"
 
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/cleanupSYS.ps1', 'cleanupSYS.ps1')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/deploy/main/cleanupSYS.ps1', 'cleanupSYS.ps1')"
 
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/cleanupUSR.ps1', 'cleanupUSR.ps1')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/deploy/main/cleanupUSR.ps1', 'cleanupUSR.ps1')"
     
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/FirstLogon.bat', 'FirstLogon.bat')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/deploy/main/FirstLogon.bat', 'FirstLogon.bat')"
 
 
 
