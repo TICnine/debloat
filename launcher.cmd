@@ -24,18 +24,18 @@
     exit
 
 
-:: Download Required Files from https://github.com/Exploitacious/Windows_Toolz/tree/main/Windows%2BServer/System_Debloat
+:: Download Required Files from https://github.com/TICnine/deploy
 :Download
 
     PowerShell -Command "mkdir C:\Temp\Cleanup -erroraction silentlycontinue"
     
     cd "C:\Temp\Cleanup"
 
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Exploitacious/Windows_Toolz/main/System_Debloat/SYSTEM-Debloat-MAIN.ps1', 'SYSTEM-Debloat-MAIN.ps1')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/TICnine/cleanupSYS.ps1', 'cleanupSYS.ps1')"
 
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Exploitacious/Windows_Toolz/main/System_Debloat/DebloatScript-HKCU.ps1', 'DebloatScript-HKCU.ps1')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/TICnine/cleanupUSR.ps1', 'cleanupUSR.ps1')"
     
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Exploitacious/Windows_Toolz/main/System_Debloat/FirstLogon.bat', 'FirstLogon.bat')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/TICnine/FirstLogon.bat', 'FirstLogon.bat')"
 
 
 
