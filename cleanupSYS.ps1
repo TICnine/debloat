@@ -200,6 +200,11 @@ $Bloatware = @(
 	"*YourPhone*"
 	"*ZuneMusic*"
 	"*ZuneVideo*"
+# Added 08/02/2024	
+	"*Grammarly*"
+	"*Camo Studio*"
+	"*Luminar*"
+	"*Clipchamp*"
 )
 
 $InstallPrograms = @( # Requires WinGet to be installed, or the switch enabled for automatically installing WinGet
