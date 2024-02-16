@@ -24,18 +24,18 @@
     exit
 
 
-:: Download Required Files from https://github.com/TICnine/deploy
+:: Download Required Files from https://github.com/TICnine/debloat
 :Download
 
     PowerShell -Command "mkdir C:\Temp\Cleanup -erroraction silentlycontinue"
     
     cd "C:\Temp\Cleanup"
 
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/deploy/main/cleanupSYS.ps1', 'cleanupSYS.ps1')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/debloat/main/cleanupSYS.ps1', 'cleanupSYS.ps1')"
 
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/deploy/main/cleanupUSR.ps1', 'cleanupUSR.ps1')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/debloat/main/cleanupUSR.ps1', 'cleanupUSR.ps1')"
     
-    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/deploy/main/FirstLogon.bat', 'FirstLogon.bat')"
+    PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TICnine/debloat/main/FirstLogon.bat', 'FirstLogon.bat')"
 
 
 
